@@ -1,8 +1,9 @@
 {
-  "name": "spark-react",
+  "name": "spark-productions",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Spark Productions - Film Production Company Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

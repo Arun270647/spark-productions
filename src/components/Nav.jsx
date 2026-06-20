@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
-const Nav = ({ navRef, scrolled }) => {
+const Nav = ({ navRef, scrolled, visible = true }) => {
   return (
     <nav
       ref={navRef}
@@ -14,10 +14,11 @@ const Nav = ({ navRef, scrolled }) => {
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: scrolled ? '14px 40px' : '20px 40px',
-        transition: 'background .4s ease, box-shadow .4s ease, padding .4s ease',
+        transition: 'background .4s ease, box-shadow .4s ease, padding .4s ease, transform .3s ease',
         background: scrolled ? 'rgba(241,236,227,0.92)' : 'rgba(241,236,227,0)',
         boxShadow: scrolled ? '0 1px 0 rgba(16,13,11,0.08)' : 'none',
-        backdropFilter: scrolled ? 'blur(10px)' : 'none'
+        backdropFilter: scrolled ? 'blur(10px)' : 'none',
+        transform: visible ? 'translateY(0)' : 'translateY(-100%)'
       }}
     >
       <Link

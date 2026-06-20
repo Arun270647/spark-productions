@@ -7,11 +7,26 @@ import GrainOverlay from './GrainOverlay';
 const Layout = () => {
   const navRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 60);
+      const currentScrollY = window.scrollY;
+
+      // Determine if scrolled past threshold
+      setScrolled(currentScrollY > 60);
+
+      // Show navbar when scrolling up or at top
+      if (currentScrollY < lastScrollY.current || currentScrollY < 100) {
+        setVisible(true);
+      } else if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        // Hide navbar when scrolling down past 100px
+        setVisible(false);
+      }
+
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -75,11 +90,11 @@ const Layout = () => {
   return (
     <div style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
       <GrainOverlay />
-      {!isFilmDetail && <Nav navRef={navRef} scrolled={scrolled} />}
+      {!isFilmDetail && <Nav navRef={navRef} scrolled={scrolled} visible={visible} />}
       <main>
         <Outlet />
       </main>
-      {!isFilmDetail && !isHomePage && <Footer />}
+      {!isFilmDetail && <Footer />}
     </div>
   );
 };

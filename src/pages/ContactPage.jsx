@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const ContactPage = () => {
   return (
-    <footer
-      id="contact"
+    <section
       style={{
         position: 'relative',
         background: '#100D0B',
         color: '#F1ECE3',
-        padding: '90px 40px 36px'
+        padding: '120px 40px 80px',
+        minHeight: '100vh'
       }}
     >
       <div style={{ maxWidth: '1500px', margin: '0 auto' }}>
@@ -153,8 +153,8 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 
-export default Footer;
+export default ContactPage;

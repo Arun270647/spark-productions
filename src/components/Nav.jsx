@@ -1,4 +1,6 @@
-const Nav = ({ navRef, scrolled, goHome, navWorks, navServices, navAbout, navDirectors, navContact }) => {
+import { Link, NavLink } from 'react-router-dom';
+
+const Nav = ({ navRef, scrolled }) => {
   return (
     <nav
       ref={navRef}
@@ -18,13 +20,12 @@ const Nav = ({ navRef, scrolled, goHome, navWorks, navServices, navAbout, navDir
         backdropFilter: scrolled ? 'blur(10px)' : 'none'
       }}
     >
-      <a
-        onClick={goHome}
+      <Link
+        to="/"
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: '11px',
-          cursor: 'pointer',
           textDecoration: 'none',
           color: 'inherit'
         }}
@@ -56,63 +57,66 @@ const Nav = ({ navRef, scrolled, goHome, navWorks, navServices, navAbout, navDir
         >
           SPARK<span style={{ color: '#E01313' }}>.</span>
         </span>
-      </a>
+      </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: '34px' }}>
-        <a
-          onClick={navWorks}
+        <NavLink
+          to="/works"
           style={{
-            cursor: 'pointer',
             fontSize: '13px',
             fontWeight: 700,
             letterSpacing: '.14em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            color: 'inherit'
           }}
         >
           Works
-        </a>
-        <a
-          onClick={navServices}
+        </NavLink>
+        <NavLink
+          to="/services"
           style={{
-            cursor: 'pointer',
             fontSize: '13px',
             fontWeight: 700,
             letterSpacing: '.14em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            color: 'inherit'
           }}
         >
           Services
-        </a>
-        <a
-          onClick={navAbout}
+        </NavLink>
+        <NavLink
+          to="/about"
           style={{
-            cursor: 'pointer',
             fontSize: '13px',
             fontWeight: 700,
             letterSpacing: '.14em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            color: 'inherit'
           }}
         >
           About
-        </a>
-        <a
-          onClick={navDirectors}
+        </NavLink>
+        <NavLink
+          to="/directors"
           style={{
-            cursor: 'pointer',
             fontSize: '13px',
             fontWeight: 700,
             letterSpacing: '.14em',
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            color: 'inherit'
           }}
         >
           Directors
-        </a>
-        <a
-          onClick={navContact}
+        </NavLink>
+        <Link
+          to="/contact"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: '8px',
-            cursor: 'pointer',
             fontSize: '13px',
             fontWeight: 800,
             letterSpacing: '.12em',
@@ -120,11 +124,12 @@ const Nav = ({ navRef, scrolled, goHome, navWorks, navServices, navAbout, navDir
             background: '#100D0B',
             color: '#F1ECE3',
             padding: '11px 18px',
-            borderRadius: '2px'
+            borderRadius: '2px',
+            textDecoration: 'none'
           }}
         >
           Contact
-        </a>
+        </Link>
       </div>
     </nav>
   );

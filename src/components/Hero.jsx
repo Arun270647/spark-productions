@@ -1,4 +1,6 @@
-const Hero = ({ navWorks, navDirectors }) => {
+import { Link } from 'react-router-dom';
+
+const Hero = () => {
   return (
     <header
       id="home"
@@ -121,10 +123,9 @@ const Hero = ({ navWorks, navDirectors }) => {
               flexWrap: 'wrap'
             }}
           >
-            <a
-              onClick={navWorks}
+            <Link
+              to="/works"
               style={{
-                cursor: 'pointer',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '10px',
@@ -136,15 +137,15 @@ const Hero = ({ navWorks, navDirectors }) => {
                 textTransform: 'uppercase',
                 padding: '16px 26px',
                 borderRadius: '2px',
-                boxShadow: '0 10px 30px -10px rgba(224,19,19,.7)'
+                boxShadow: '0 10px 30px -10px rgba(224,19,19,.7)',
+                textDecoration: 'none'
               }}
             >
               View our works <span>&rarr;</span>
-            </a>
-            <a
-              onClick={navDirectors}
+            </Link>
+            <Link
+              to="/directors"
               style={{
-                cursor: 'pointer',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '10px',
@@ -156,11 +157,12 @@ const Hero = ({ navWorks, navDirectors }) => {
                 textTransform: 'uppercase',
                 padding: '16px 26px',
                 borderRadius: '2px',
-                border: '2px solid #100D0B'
+                border: '2px solid #100D0B',
+                textDecoration: 'none'
               }}
             >
               Submit your film
-            </a>
+            </Link>
           </div>
         </div>
         <div

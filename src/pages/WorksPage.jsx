@@ -65,7 +65,7 @@ const WorksPage = () => {
                 color: '#E01313'
               }}
             >
-              06 films on board · 941K+ views · 15 awards
+              04 films on board · 941K+ views · 15 awards
             </span>
           </div>
           <h2

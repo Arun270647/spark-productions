@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <TitleMarquee text="ATMAN  ✦  SANGILI  ✦  SOUNDU SIMBU  ✦  WRITER'S TIMES  ✦  " />
+      <TitleMarquee text="ATMAN     ✦     SANGILI     ✦     SOUNDU SIMBU     ✦     WRITER'S TIMES     ✦     " />
 
       {/* Stats Section */}
       <section style={{ padding: '80px 40px', background: '#100D0B', color: '#F1ECE3' }}>

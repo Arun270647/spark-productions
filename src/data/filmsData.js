@@ -6,7 +6,12 @@ export const films = [
     year: '2026',
     genre: 'Sci-fi / Drama',
     status: 'PREMIERE',
-    poster: '/assets/atman-poster.jpeg',
+    poster: '/assets/film_pics/Atman/atman-poster.jpeg',
+    gallery: [
+      '/assets/film_pics/Atman/atman_1.PNG',
+      '/assets/film_pics/Atman/atman_2.PNG',
+      '/assets/film_pics/Atman/atman_3.PNG'
+    ],
     bg: '#7a0606',
     runtime: '42 min',
     language: 'Tamil',
@@ -46,7 +51,11 @@ export const films = [
     year: '2025',
     genre: 'Social Drama',
     status: 'IN POST',
-    poster: null,
+    poster: '/assets/film_pics/Sangili/sangili_1.PNG',
+    gallery: [
+      '/assets/film_pics/Sangili/sangili_1.PNG',
+      '/assets/film_pics/Sangili/sangili_2.PNG'
+    ],
     bg: 'linear-gradient(150deg,#C21111,#6e0505)',
     runtime: '38 min',
     language: 'Tamil',
@@ -85,7 +94,13 @@ export const films = [
     year: '2025',
     genre: 'Comedy',
     status: 'IN PRODUCTION',
-    poster: null,
+    poster: '/assets/film_pics/Sound Simbu/ss1.PNG',
+    gallery: [
+      '/assets/film_pics/Sound Simbu/ss1.PNG',
+      '/assets/film_pics/Sound Simbu/ss2.PNG',
+      '/assets/film_pics/Sound Simbu/ss3.PNG',
+      '/assets/film_pics/Sound Simbu/ss4.PNG'
+    ],
     bg: 'linear-gradient(150deg,#E01313,#8a0808)',
     runtime: '28 min',
     language: 'Tamil',
@@ -153,84 +168,6 @@ export const films = [
     featured: true,
     viewCount: '342K',
     likes: '21K'
-  },
-  {
-    slug: 'kaalam',
-    no: '05',
-    title: 'KAALAM',
-    year: '2024',
-    genre: 'Period Drama',
-    status: 'RELEASED',
-    poster: null,
-    bg: 'linear-gradient(150deg,#8B4513,#4a2511)',
-    runtime: '45 min',
-    language: 'Tamil',
-    rating: 'PG-13',
-    logline: 'Three generations, one village, and the march of time that changes everything and nothing.',
-    synopsis:
-      'KAALAM (Time) follows a Tamil village across 60 years, watching as modernity creeps in while traditions hold firm. A meditation on change, memory, and the things we choose to preserve.',
-    fullDescription: 'KAALAM is an epic compressed into 45 minutes. Through the eyes of three generations of the same family, we witness the transformation of rural Tamil Nadu from pre-independence to the digital age. The film captures the tension between progress and tradition, asking what we gain and lose as time marches forward. Shot in authentic locations with period-accurate details.',
-    credit: 'Spark Productions',
-    director: 'Sivam',
-    writer: 'Spark & Sivam',
-    cinematographer: 'Santa',
-    editor: 'Arun',
-    producer: 'Spark Productions',
-    cast: [
-      { name: 'Kamal Haasan', role: 'The Grandfather' },
-      { name: 'Sivakumar', role: 'The Father' },
-      { name: 'Suriya', role: 'The Son' }
-    ],
-    awards: [
-      'Best Period Film - Chennai International Film Festival 2024',
-      'Best Art Direction - South Indian Shorts 2024'
-    ],
-    dates: [
-      { d: '15.08.2024', l: 'Independence Day Release' },
-      { d: '01.09.2024', l: 'Streaming on YouTube' }
-    ],
-    featured: false,
-    viewCount: '198K',
-    likes: '14K'
-  },
-  {
-    slug: 'silai',
-    no: '06',
-    title: 'SILAI',
-    year: '2023',
-    genre: 'Thriller',
-    status: 'RELEASED',
-    poster: null,
-    bg: 'linear-gradient(150deg,#2C2C2C,#0a0a0a)',
-    runtime: '32 min',
-    language: 'Tamil',
-    rating: 'R',
-    logline: 'One wrong turn, one missing person, and a web of lies that unravels in the dark.',
-    synopsis:
-      'When a woman disappears during a road trip, her friends realize they never really knew her at all. SILAI (Web) weaves paranoia and suspicion into a taut psychological thriller.',
-    fullDescription: 'SILAI keeps you guessing until the final frame. What begins as a road trip drama quickly descends into a labyrinth of lies, secrets, and betrayals. The film explores how well we can truly know anyone, and what happens when the masks come off. Shot entirely at night with minimal lighting, it creates an atmosphere of claustrophobic dread.',
-    credit: 'Spark Productions',
-    director: 'Arun',
-    writer: 'Sivam',
-    cinematographer: 'Santa',
-    editor: 'Spark',
-    producer: 'Spark Productions',
-    cast: [
-      { name: 'Trisha Krishnan', role: 'Maya' },
-      { name: 'Andrea Jeremiah', role: 'Divya' },
-      { name: 'Nithya Menen', role: 'Priya' }
-    ],
-    awards: [
-      'Best Thriller - Mumbai International Shorts 2023',
-      'Best Editing - Indian Film Awards 2023'
-    ],
-    dates: [
-      { d: '31.10.2023', l: 'Halloween Release' },
-      { d: '15.11.2023', l: 'Streaming on YouTube' }
-    ],
-    featured: false,
-    viewCount: '276K',
-    likes: '19K'
   }
 ];
 

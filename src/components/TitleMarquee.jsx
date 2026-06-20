@@ -4,7 +4,7 @@ const TitleMarquee = ({ text }) => {
       style={{
         background: '#100D0B',
         color: '#F1ECE3',
-        padding: '18px 0',
+        padding: '24px 0',
         overflow: 'hidden',
         whiteSpace: 'nowrap',
         borderTop: '1px solid rgba(255,255,255,.08)',
@@ -22,7 +22,7 @@ const TitleMarquee = ({ text }) => {
           style={{
             fontFamily: 'Anton',
             fontSize: '30px',
-            letterSpacing: '.02em'
+            letterSpacing: '.08em'
           }}
         >
           {text}
@@ -31,7 +31,7 @@ const TitleMarquee = ({ text }) => {
           style={{
             fontFamily: 'Anton',
             fontSize: '30px',
-            letterSpacing: '.02em'
+            letterSpacing: '.08em'
           }}
         >
           {text}

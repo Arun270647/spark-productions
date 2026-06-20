@@ -1,5 +1,20 @@
+import { useState } from 'react';
+
 const FilmDetail = ({ detail, closeFilm }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   if (!detail) return null;
+
+  const images = detail.gallery || (detail.poster ? [detail.poster] : []);
+  const hasGallery = images.length > 1;
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   return (
     <div
@@ -68,18 +83,117 @@ const FilmDetail = ({ detail, closeFilm }) => {
             minHeight: '60vh'
           }}
         >
-          {detail.poster ? (
-            <img
-              src={detail.poster}
-              alt={detail.title}
-              style={{
-                position: 'absolute',
-                inset: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover'
-              }}
-            />
+          {images.length > 0 ? (
+            <>
+              <img
+                src={images[currentImageIndex]}
+                alt={`${detail.title} - ${currentImageIndex + 1}`}
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+              {hasGallery && (
+                <>
+                  <button
+                    onClick={prevImage}
+                    style={{
+                      position: 'absolute',
+                      left: '20px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      width: '50px',
+                      height: '50px',
+                      borderRadius: '50%',
+                      background: 'rgba(241,236,227,0.9)',
+                      border: 'none',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '24px',
+                      fontWeight: 'bold',
+                      color: '#E01313',
+                      transition: 'all 0.3s ease',
+                      zIndex: 2
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = '#E01313';
+                      e.currentTarget.style.color = '#F1ECE3';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = 'rgba(241,236,227,0.9)';
+                      e.currentTarget.style.color = '#E01313';
+                    }}
+                  >
+                    ‹
+                  </button>
+                  <button
+                    onClick={nextImage}
+                    style={{
+                      position: 'absolute',
+                      right: '20px',
+                      top: '50%',
+                      transform: 'translateY(-50%)',
+                      width: '50px',
+                      height: '50px',
+                      borderRadius: '50%',
+                      background: 'rgba(241,236,227,0.9)',
+                      border: 'none',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: '24px',
+                      fontWeight: 'bold',
+                      color: '#E01313',
+                      transition: 'all 0.3s ease',
+                      zIndex: 2
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = '#E01313';
+                      e.currentTarget.style.color = '#F1ECE3';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = 'rgba(241,236,227,0.9)';
+                      e.currentTarget.style.color = '#E01313';
+                    }}
+                  >
+                    ›
+                  </button>
+                  <div
+                    style={{
+                      position: 'absolute',
+                      bottom: '20px',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      display: 'flex',
+                      gap: '8px',
+                      zIndex: 2
+                    }}
+                  >
+                    {images.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentImageIndex(idx)}
+                        style={{
+                          width: currentImageIndex === idx ? '32px' : '10px',
+                          height: '10px',
+                          borderRadius: '5px',
+                          background: currentImageIndex === idx ? '#E01313' : 'rgba(241,236,227,0.6)',
+                          border: 'none',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s ease'
+                        }}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
+            </>
           ) : (
             <div
               style={{

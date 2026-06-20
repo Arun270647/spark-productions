@@ -436,7 +436,7 @@ const HomePage = () => {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '30px' }}>
-            {teamMembers.slice(0, 5).map((member, idx) => (
+            {[...teamMembers].sort((a, b) => a.order - b.order).map((member, idx) => (
               <div
                 key={member.id}
                 data-reveal

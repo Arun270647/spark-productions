@@ -1,93 +1,79 @@
 export const teamMembers = [
   {
     id: 1,
-    name: 'Spark',
-    role: 'Founder & Director',
-    title: 'Creative Director',
-    bio: 'Visionary filmmaker with a passion for stories that challenge conventions. Founded Spark Productions in 2023 with a mission to amplify independent voices in Tamil cinema.',
-    specialization: ['Direction', 'Story Development', 'Creative Strategy'],
-    experience: '8+ years',
-    notable: ['ATMAN', "WRITER'S TIMES", 'SANGILI'],
-    quote: 'Every great film starts with a spark of an idea.',
+    name: 'Arun Vignesh',
+    fullName: 'Mr. Arun Vignesh',
+    role: 'Chief Marketing Officer',
+    title: 'CMO',
+    bio: 'We are delighted to introduce our new CMO, Mr. Arun Vignesh, to Spark Productions. We hope our journey together will be both illuminating and memorable.',
+    specialization: ['Marketing Strategy', 'Brand Development', 'Digital Marketing'],
+    experience: '5+ years',
+    notable: ['Brand Strategy', 'Market Expansion', 'Digital Campaigns'],
+    quote: 'Because of us, nothing bad should happen to anyone. Let them do what they want.',
     social: {
-      instagram: '@spark_filmmaker',
-      twitter: '@sparkfilms',
-      email: 'spark@sparkproductions.in'
+      instagram: '@arunvignesh',
+      email: 'arun@sparkproductions.in'
     },
-    avatar: null,
-    featured: true
+    avatar: '/assets/team/arun-vignesh.jpg',
+    featured: true,
+    order: 1
   },
   {
     id: 2,
-    name: 'Sivam',
-    role: 'Head Writer & Director',
-    title: 'Story Architect',
-    bio: 'Award-winning screenwriter known for crafting emotionally resonant narratives. Specializes in social dramas and character-driven stories.',
-    specialization: ['Screenwriting', 'Story Editing', 'Direction'],
-    experience: '7+ years',
-    notable: ['SANGILI', 'KAALAM', 'SILAI'],
-    quote: 'Good writing is invisible. Great writing is unforgettable.',
+    name: 'Santhanam Samy',
+    fullName: 'Mr. Sri Santhanam Samy',
+    role: 'Chief Financial Officer',
+    title: 'CFO',
+    bio: 'We are delighted to introduce our new CFO, Mr. Sri Santhanam Samy, to Spark Productions. We hope that our journey together will be both bright and iconic.',
+    specialization: ['Financial Planning', 'Budget Management', 'Investment Strategy'],
+    experience: '6+ years',
+    notable: ['Financial Strategy', 'Investment Planning', 'Resource Allocation'],
+    quote: 'Veesura valaila ellam meen maturathu illa pa, kathunu irukanum, veesu',
     social: {
-      instagram: '@sivam_writes',
-      twitter: '@sivamscripts',
-      email: 'sivam@sparkproductions.in'
+      instagram: '@santhanam_samy',
+      email: 'santhanam@sparkproductions.in'
     },
-    avatar: null,
-    featured: true
+    avatar: '/assets/team/santhanam-samy.jpg',
+    featured: true,
+    order: 2
   },
   {
     id: 3,
-    name: 'Santa',
-    role: 'Director of Photography',
-    title: 'Visual Storyteller',
-    bio: 'Cinematographer with an eye for visual poetry. Has shot over 20 short films and 3 feature films. Known for natural lighting and intimate framing.',
-    specialization: ['Cinematography', 'Lighting', 'Visual Design'],
-    experience: '6+ years',
-    notable: ['ATMAN', 'KAALAM', 'SILAI'],
-    quote: 'Light is the language of cinema.',
+    name: 'Sivam',
+    fullName: 'Mr. Sivam',
+    role: 'Chief Operating Officer',
+    title: 'COO',
+    bio: 'We are thrilled to welcome Mr. Sivam as our new COO to Spark Productions. We eagerly anticipate embarking on a journey together that will be both daring and deeply meaningful.',
+    specialization: ['Operations Management', 'Team Leadership', 'Process Optimization'],
+    experience: '7+ years',
+    notable: ['Operational Excellence', 'Team Building', 'Strategic Planning'],
+    quote: 'I live my life a quarter mile at a time.',
     social: {
-      instagram: '@santa_frames',
-      twitter: '@santadop',
-      email: 'santa@sparkproductions.in'
+      instagram: '@sivam_coo',
+      email: 'sivam@sparkproductions.in'
     },
-    avatar: null,
-    featured: true
+    avatar: '/assets/team/sivam.jpg',
+    featured: true,
+    order: 3
   },
   {
     id: 4,
-    name: 'Arun',
-    role: 'Editor & Director',
-    title: 'Post-Production Lead',
-    bio: 'Master editor who shapes stories in the cutting room. Believes the best films are found in editing. Also directs psychological thrillers.',
-    specialization: ['Editing', 'Post-Production', 'Directing'],
-    experience: '7+ years',
-    notable: ['SILAI', 'ATMAN', "WRITER'S TIMES"],
-    quote: 'The magic happens in the edit.',
+    name: 'Spark',
+    fullName: 'Mr. Pon Karthik Raja',
+    role: 'Chief Executive Officer',
+    title: 'CEO',
+    bio: 'Final one and the "ONE" Mr. Pon Karthik Raja, also known as Spark, as our CEO at Spark Productions. We eagerly anticipate embarking on a journey of success and hope.',
+    specialization: ['Leadership', 'Vision & Strategy', 'Creative Direction'],
+    experience: '8+ years',
+    notable: ['Company Vision', 'Strategic Growth', 'Creative Leadership'],
+    quote: 'I\'m not here to prove anyone how good I am.',
     social: {
-      instagram: '@arun_edits',
-      twitter: '@aruncuts',
-      email: 'arun@sparkproductions.in'
+      instagram: '@spark_ceo',
+      email: 'spark@sparkproductions.in'
     },
-    avatar: null,
-    featured: true
-  },
-  {
-    id: 5,
-    name: 'Gokul',
-    role: 'Producer & Operations Head',
-    title: 'Production Manager',
-    bio: 'Strategic producer who turns creative visions into reality. Manages budgets, schedules, and logistics with precision. The backbone of Spark Productions.',
-    specialization: ['Production Management', 'Budgeting', 'Distribution'],
-    experience: '9+ years',
-    notable: 'All Spark Productions films',
-    quote: 'Great films need great planning.',
-    social: {
-      instagram: '@gokul_produces',
-      twitter: '@gokulprod',
-      email: 'gokul@sparkproductions.in'
-    },
-    avatar: null,
-    featured: true
+    avatar: '/assets/team/spark.jpg',
+    featured: true,
+    order: 4
   }
 ];
 

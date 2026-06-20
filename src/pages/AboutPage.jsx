@@ -204,7 +204,7 @@ const AboutPage = () => {
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
-            {teamMembers.map((member, idx) => (
+            {[...teamMembers].sort((a, b) => a.order - b.order).map((member, idx) => (
               <div
                 key={member.id}
                 data-reveal

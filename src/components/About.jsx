@@ -148,7 +148,7 @@ const About = () => {
             color: '#9E0A0A'
           }}
         >
-          The collective &mdash; Spark · Sivam · Santa · Arun · Gokul
+          The collective &mdash; Spark · Sivam · Santhanam · Arun
         </div>
       </div>
     </section>

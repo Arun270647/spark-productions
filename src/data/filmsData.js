@@ -15,12 +15,12 @@ export const films = [
     synopsis:
       'Trapped in a loop he can no longer control, a man begins to reincarnate across timelines, each life a fragment of the last. As the loops collapse into one another, he must decide which version of himself is worth surviving. A philosophical exploration of identity, memory, and the price of immortality.',
     fullDescription: 'ATMAN pushes the boundaries of science fiction storytelling by blending Indian philosophy with cutting-edge time-loop narratives. The film explores the concept of the eternal soul (Atman) trapped in an endless cycle of rebirth, unable to achieve moksha (liberation). Through stunning visual effects and thought-provoking dialogue, we witness one man\'s struggle against the very power that makes him immortal.',
-    credit: 'Spark · Sivam · Santa · Arun · Gokul',
+    credit: 'Spark · Sivam · Santhanam · Arun',
     director: 'Spark',
     writer: 'Sivam',
     cinematographer: 'Santa',
     editor: 'Arun',
-    producer: 'Gokul',
+    producer: 'Spark Productions',
     cast: [
       { name: 'Rajesh Kumar', role: 'The Traveler' },
       { name: 'Priya Sharma', role: 'The Guide' },
@@ -60,7 +60,7 @@ export const films = [
     writer: 'Spark',
     cinematographer: 'Arun',
     editor: 'Santa',
-    producer: 'Gokul',
+    producer: 'Spark Productions',
     cast: [
       { name: 'Dhanush M', role: 'Murugan' },
       { name: 'Aishwarya R', role: 'Sangili' },
@@ -97,7 +97,7 @@ export const films = [
     credit: 'Spark Productions',
     director: 'Santa',
     writer: 'Arun & Spark',
-    cinematographer: 'Gokul',
+    cinematographer: 'Santhanam',
     editor: 'Sivam',
     producer: 'Spark Productions',
     cast: [
@@ -135,7 +135,7 @@ export const films = [
     writer: 'Sivam',
     cinematographer: 'Santa',
     editor: 'Arun',
-    producer: 'Gokul',
+    producer: 'Spark Productions',
     cast: [
       { name: 'Vijay Sethupathi', role: 'The Writer' },
       { name: 'Samantha Ruth Prabhu', role: 'The Muse' },
@@ -172,7 +172,7 @@ export const films = [
     fullDescription: 'KAALAM is an epic compressed into 45 minutes. Through the eyes of three generations of the same family, we witness the transformation of rural Tamil Nadu from pre-independence to the digital age. The film captures the tension between progress and tradition, asking what we gain and lose as time marches forward. Shot in authentic locations with period-accurate details.',
     credit: 'Spark Productions',
     director: 'Sivam',
-    writer: 'Spark & Gokul',
+    writer: 'Spark & Sivam',
     cinematographer: 'Santa',
     editor: 'Arun',
     producer: 'Spark Productions',
@@ -214,7 +214,7 @@ export const films = [
     writer: 'Sivam',
     cinematographer: 'Santa',
     editor: 'Spark',
-    producer: 'Gokul',
+    producer: 'Spark Productions',
     cast: [
       { name: 'Trisha Krishnan', role: 'Maya' },
       { name: 'Andrea Jeremiah', role: 'Divya' },

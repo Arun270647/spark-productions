@@ -33,7 +33,7 @@ export const blogPosts = [
     title: 'Breaking Down Our Short Film Production: Complete Transparency',
     excerpt: 'How do we manage resources in a short film production? We break down every aspect of our process.',
     content: 'Transparency is important to us. Here\'s exactly how we approach production planning, resource allocation, and delivering quality short films...',
-    author: 'Gokul',
+    author: 'Sivam',
     date: '2026-02-15',
     category: 'Business',
     tags: ['Production', 'Transparency', 'Filmmaking', 'Process'],

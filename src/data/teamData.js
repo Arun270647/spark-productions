@@ -11,8 +11,10 @@ export const teamMembers = [
     notable: ['Brand Strategy', 'Market Expansion', 'Digital Campaigns'],
     quote: 'Because of us, nothing bad should happen to anyone. Let them do what they want.',
     social: {
-      instagram: '@spark_productionsoffl',
-      email: 'sparkproductions09@gmail.com'
+      instagram: 'https://www.instagram.com/_arun._.06/?hl=en',
+      instagramHandle: '@_arun._.06',
+      email: 'shankar72ind@gmail.com',
+      phone: '+91 8438996701'
     },
     avatar: '/assets/team/arun-vignesh.jpg',
     featured: true,
@@ -30,8 +32,10 @@ export const teamMembers = [
     notable: ['Financial Strategy', 'Investment Planning', 'Resource Allocation'],
     quote: 'Veesura valaila ellam meen maturathu illa pa, kathunu irukanum, veesu',
     social: {
-      instagram: '@spark_productionsoffl',
-      email: 'sparkproductions09@gmail.com'
+      instagram: 'https://www.instagram.com/im.santhanam?igsh=MWg1NHhwYWd3OGUxcA%3D%3D&utm_source=qr',
+      instagramHandle: '@im.santhanam',
+      email: 'mrssrisanthanam@gmail.com',
+      phone: '+91 6374920861'
     },
     avatar: '/assets/team/santhanam-samy.jpg',
     featured: true,
@@ -49,8 +53,10 @@ export const teamMembers = [
     notable: ['Operational Excellence', 'Team Building', 'Strategic Planning'],
     quote: 'I live my life a quarter mile at a time.',
     social: {
-      instagram: '@spark_productionsoffl',
-      email: 'sparkproductions09@gmail.com'
+      instagram: 'https://www.instagram.com/itz_s.ivam?igsh=dzV4d3p5YjMyeDdx',
+      instagramHandle: '@itz_s.ivam',
+      email: 'sivamjadhav77@gmail.com',
+      phone: '+91 96296 86411'
     },
     avatar: '/assets/team/sivam.jpg',
     featured: true,
@@ -68,8 +74,10 @@ export const teamMembers = [
     notable: ['Company Vision', 'Strategic Growth', 'Creative Leadership'],
     quote: 'I\'m not here to prove anyone how good I am.',
     social: {
-      instagram: '@spark_productionsoffl',
-      email: 'sparkproductions09@gmail.com'
+      instagram: 'https://www.instagram.com/sp4rk.og?igsh=MW1ubDQyeXpsbXNkOA==',
+      instagramHandle: '@sp4rk.og',
+      email: 'spkmsd7777@gmail.com',
+      phone: '+91 70105 71009'
     },
     avatar: '/assets/team/spark.jpg',
     featured: true,

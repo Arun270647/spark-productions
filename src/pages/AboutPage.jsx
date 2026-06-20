@@ -256,7 +256,7 @@ const AboutPage = () => {
                     marginBottom: '16px'
                   }}
                 >
-                  {member.title}
+                  {member.role}
                 </p>
                 <p
                   style={{

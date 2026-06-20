@@ -21,14 +21,16 @@ const HomePage = () => {
             data-reveal
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-              gap: '40px',
-              textAlign: 'center'
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '60px',
+              textAlign: 'center',
+              maxWidth: '900px',
+              margin: '0 auto'
             }}
           >
             <div>
               <div style={{ fontFamily: 'Anton', fontSize: '58px', color: '#E01313', lineHeight: 1 }}>
-                {stats.totalFilms}
+                4
               </div>
               <div
                 style={{
@@ -40,12 +42,12 @@ const HomePage = () => {
                   marginTop: '8px'
                 }}
               >
-                Films Produced
+                films
               </div>
             </div>
             <div>
               <div style={{ fontFamily: 'Anton', fontSize: '58px', color: '#E01313', lineHeight: 1 }}>
-                {stats.totalViews}
+                ∞
               </div>
               <div
                 style={{
@@ -57,12 +59,12 @@ const HomePage = () => {
                   marginTop: '8px'
                 }}
               >
-                Total Views
+                ideas
               </div>
             </div>
             <div>
               <div style={{ fontFamily: 'Anton', fontSize: '58px', color: '#E01313', lineHeight: 1 }}>
-                {stats.awards}
+                100%
               </div>
               <div
                 style={{
@@ -74,24 +76,7 @@ const HomePage = () => {
                   marginTop: '8px'
                 }}
               >
-                Awards Won
-              </div>
-            </div>
-            <div>
-              <div style={{ fontFamily: 'Anton', fontSize: '58px', color: '#E01313', lineHeight: 1 }}>
-                {stats.totalLikes}
-              </div>
-              <div
-                style={{
-                  fontFamily: 'Oswald',
-                  fontSize: '12px',
-                  letterSpacing: '.2em',
-                  textTransform: 'uppercase',
-                  color: 'rgba(241,236,227,.7)',
-                  marginTop: '8px'
-                }}
-              >
-                Community Likes
+                impact
               </div>
             </div>
           </div>
@@ -476,7 +461,7 @@ const HomePage = () => {
                     marginBottom: '12px'
                   }}
                 >
-                  {member.title}
+                  {member.role}
                 </p>
                 <p style={{ fontSize: '13px', lineHeight: 1.5, color: '#6B6259' }}>
                   {member.bio.split('.')[0]}.

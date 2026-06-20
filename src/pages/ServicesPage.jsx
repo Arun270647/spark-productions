@@ -148,15 +148,9 @@ const ServicesPage = () => {
                       </ul>
                     </div>
                   </div>
-                  <div style={{ marginTop: '20px', display: 'flex', gap: '30px' }}>
-                    <div>
-                      <span style={{ fontSize: '12px', color: 'rgba(241,236,227,.5)' }}>Timeline: </span>
-                      <span style={{ fontSize: '14px', fontWeight: 700 }}>{svc.timeline}</span>
-                    </div>
-                    <div>
-                      <span style={{ fontSize: '12px', color: 'rgba(241,236,227,.5)' }}>Starting at: </span>
-                      <span style={{ fontSize: '14px', fontWeight: 700, color: '#E01313' }}>{svc.startingPrice}</span>
-                    </div>
+                  <div style={{ marginTop: '20px' }}>
+                    <span style={{ fontSize: '12px', color: 'rgba(241,236,227,.5)' }}>Timeline: </span>
+                    <span style={{ fontSize: '14px', fontWeight: 700 }}>{svc.timeline}</span>
                   </div>
                 </div>
                 <span style={{ fontSize: '26px', color: 'rgba(241,236,227,.4)' }}>&rarr;</span>

@@ -14,8 +14,8 @@ export const faqs = [
   {
     id: 3,
     category: 'Services',
-    question: 'How much does it cost to produce a short film?',
-    answer: 'Our short film production packages start at ₹5,00,000 ($6,000 USD) for a complete production. This includes pre-production, shooting (3-5 days), post-production, and festival-ready deliverables. The final cost depends on factors like runtime, cast size, location complexity, and special requirements. We offer customized quotes based on your specific project.'
+    question: 'How do you price your services?',
+    answer: 'Our pricing is customized based on your specific project requirements including runtime, cast size, location complexity, and special requirements. We offer transparent quotes after an initial consultation where we understand your vision and needs. Contact us for a detailed proposal tailored to your project.'
   },
   {
     id: 4,
@@ -81,7 +81,7 @@ export const faqs = [
     id: 14,
     category: 'Location',
     question: 'Do you shoot only in Chennai?',
-    answer: 'While we\'re based in Chennai, we shoot anywhere in India. We\'ve filmed in Tamil Nadu, Kerala, Karnataka, and other states. International shoots can be discussed on a case-by-case basis. Location costs (travel, accommodation, permits) are included in project budgets. We also help with location scouting and securing filming permissions.'
+    answer: 'While we\'re based in Chennai, we shoot anywhere in India. We\'ve filmed in Tamil Nadu, Kerala, Karnataka, and other states. International shoots can be discussed on a case-by-case basis. We handle all logistics including travel, accommodation, permits, location scouting, and securing filming permissions.'
   },
   {
     id: 15,

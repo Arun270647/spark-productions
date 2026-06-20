@@ -255,8 +255,7 @@ export const services = [
       'Behind-the-scenes content',
       'Premiere event organization'
     ],
-    timeline: '8-12 weeks',
-    startingPrice: '₹5,00,000'
+    timeline: '8-12 weeks'
   },
   {
     no: '02',
@@ -278,8 +277,7 @@ export const services = [
       'Treatment document',
       'Logline and synopsis'
     ],
-    timeline: '4-6 weeks',
-    startingPrice: '₹75,000'
+    timeline: '4-6 weeks'
   },
   {
     no: '03',
@@ -301,8 +299,7 @@ export const services = [
       'Director\'s notes',
       'Production-ready script'
     ],
-    timeline: '3-5 weeks',
-    startingPrice: '₹50,000'
+    timeline: '3-5 weeks'
   },
   {
     no: '04',
@@ -325,8 +322,7 @@ export const services = [
       'YouTube premiere',
       'Social media promotion'
     ],
-    timeline: '12-16 weeks',
-    startingPrice: '₹8,00,000'
+    timeline: '12-16 weeks'
   }
 ];
 

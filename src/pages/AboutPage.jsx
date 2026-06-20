@@ -224,23 +224,18 @@ const AboutPage = () => {
                   e.currentTarget.style.boxShadow = 'none';
                 }}
               >
-                <div
+                <img
+                  src={member.avatar}
+                  alt={member.name}
                   style={{
                     width: '80px',
                     height: '80px',
                     borderRadius: '50%',
-                    background: '#E01313',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontFamily: 'Anton',
-                    fontSize: '32px',
-                    color: '#F1ECE3',
-                    marginBottom: '20px'
+                    objectFit: 'cover',
+                    marginBottom: '20px',
+                    display: 'block'
                   }}
-                >
-                  {member.name.charAt(0)}
-                </div>
+                />
                 <h4
                   style={{
                     fontFamily: 'Anton',

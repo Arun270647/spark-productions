@@ -16,7 +16,7 @@ export const teamMembers = [
       email: 'shankar72ind@gmail.com',
       phone: '+91 8438996701'
     },
-    avatar: '/assets/team/arun-vignesh.jpg',
+    avatar: '/assets/team_pics/arun.jpeg',
     featured: true,
     order: 1
   },
@@ -37,7 +37,7 @@ export const teamMembers = [
       email: 'mrssrisanthanam@gmail.com',
       phone: '+91 6374920861'
     },
-    avatar: '/assets/team/santhanam-samy.jpg',
+    avatar: '/assets/team_pics/santa.PNG',
     featured: true,
     order: 2
   },
@@ -58,7 +58,7 @@ export const teamMembers = [
       email: 'sivamjadhav77@gmail.com',
       phone: '+91 96296 86411'
     },
-    avatar: '/assets/team/sivam.jpg',
+    avatar: '/assets/team_pics/sivam.jpeg',
     featured: true,
     order: 3
   },
@@ -79,7 +79,7 @@ export const teamMembers = [
       email: 'spkmsd7777@gmail.com',
       phone: '+91 70105 71009'
     },
-    avatar: '/assets/team/spark.jpg',
+    avatar: '/assets/team_pics/spark.jpeg',
     featured: true,
     order: 4
   }

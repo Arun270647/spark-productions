@@ -11,8 +11,8 @@ export const teamMembers = [
     notable: ['Brand Strategy', 'Market Expansion', 'Digital Campaigns'],
     quote: 'Because of us, nothing bad should happen to anyone. Let them do what they want.',
     social: {
-      instagram: '@arunvignesh',
-      email: 'arun@sparkproductions.in'
+      instagram: '@spark_productionsoffl',
+      email: 'sparkproductions09@gmail.com'
     },
     avatar: '/assets/team/arun-vignesh.jpg',
     featured: true,
@@ -30,8 +30,8 @@ export const teamMembers = [
     notable: ['Financial Strategy', 'Investment Planning', 'Resource Allocation'],
     quote: 'Veesura valaila ellam meen maturathu illa pa, kathunu irukanum, veesu',
     social: {
-      instagram: '@santhanam_samy',
-      email: 'santhanam@sparkproductions.in'
+      instagram: '@spark_productionsoffl',
+      email: 'sparkproductions09@gmail.com'
     },
     avatar: '/assets/team/santhanam-samy.jpg',
     featured: true,
@@ -49,8 +49,8 @@ export const teamMembers = [
     notable: ['Operational Excellence', 'Team Building', 'Strategic Planning'],
     quote: 'I live my life a quarter mile at a time.',
     social: {
-      instagram: '@sivam_coo',
-      email: 'sivam@sparkproductions.in'
+      instagram: '@spark_productionsoffl',
+      email: 'sparkproductions09@gmail.com'
     },
     avatar: '/assets/team/sivam.jpg',
     featured: true,
@@ -68,8 +68,8 @@ export const teamMembers = [
     notable: ['Company Vision', 'Strategic Growth', 'Creative Leadership'],
     quote: 'I\'m not here to prove anyone how good I am.',
     social: {
-      instagram: '@spark_ceo',
-      email: 'spark@sparkproductions.in'
+      instagram: '@spark_productionsoffl',
+      email: 'sparkproductions09@gmail.com'
     },
     avatar: '/assets/team/spark.jpg',
     featured: true,

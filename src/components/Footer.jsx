@@ -60,14 +60,33 @@ const Footer = () => {
                 fontWeight: 500
               }}
             >
-              <a href="#" style={{ color: '#F1ECE3', textDecoration: 'none' }}>
+              <a
+                href="https://youtube.com/@sparkproduction09?si=OF7bq6xJwTQ2nuyo"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#F1ECE3', textDecoration: 'none', transition: 'color .3s ease' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#E01313'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#F1ECE3'}
+              >
                 YouTube — Spark Productions
               </a>
-              <a href="#" style={{ color: '#F1ECE3', textDecoration: 'none' }}>
-                Instagram — @sparkproductions
+              <a
+                href="https://www.instagram.com/spark_productionsoffl?igsh=YjZyZ21hcnp2bjdo"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#F1ECE3', textDecoration: 'none', transition: 'color .3s ease' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#E01313'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#F1ECE3'}
+              >
+                Instagram — @spark_productionsoffl
               </a>
-              <a href="#" style={{ color: '#F1ECE3', textDecoration: 'none' }}>
-                hello@sparkproductions.in
+              <a
+                href="mailto:sparkproductions09@gmail.com"
+                style={{ color: '#F1ECE3', textDecoration: 'none', transition: 'color .3s ease' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#E01313'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#F1ECE3'}
+              >
+                sparkproductions09@gmail.com
               </a>
             </div>
           </div>

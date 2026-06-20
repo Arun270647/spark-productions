@@ -1,9 +1,7 @@
 import { teamMembers, advisors } from '../data/teamData';
-import { testimonials, getFeaturedTestimonials } from '../data/testimonialsData';
 import { getFilmStats } from '../data/filmsData';
 
 const AboutPage = () => {
-  const featuredTestimonials = getFeaturedTestimonials();
   const stats = getFilmStats();
 
   return (
@@ -285,71 +283,6 @@ const AboutPage = () => {
                   }}
                 >
                   "{member.quote}"
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section style={{ padding: '80px 40px', background: '#100D0B', color: '#F1ECE3' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div data-reveal style={{ marginBottom: '50px', textAlign: 'center' }}>
-            <span
-              style={{
-                fontFamily: 'Oswald',
-                fontWeight: 600,
-                fontSize: '13px',
-                letterSpacing: '.3em',
-                textTransform: 'uppercase',
-                color: '#E01313'
-              }}
-            >
-              What People Say
-            </span>
-            <h3
-              style={{
-                fontFamily: 'Anton',
-                fontSize: 'clamp(36px,5vw,56px)',
-                lineHeight: 0.9,
-                textTransform: 'uppercase',
-                marginTop: '12px'
-              }}
-            >
-              Testimonials
-            </h3>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-            {featuredTestimonials.map((testimonial, idx) => (
-              <div
-                key={testimonial.id}
-                data-reveal
-                data-reveal-delay={idx * 100}
-                style={{
-                  background: 'rgba(241,236,227,.05)',
-                  padding: '32px',
-                  borderRadius: '4px',
-                  border: '1px solid rgba(241,236,227,.12)'
-                }}
-              >
-                <div style={{ fontSize: '40px', color: '#E01313', lineHeight: 1 }}>"</div>
-                <p
-                  style={{
-                    fontSize: '15px',
-                    lineHeight: 1.7,
-                    marginBottom: '20px',
-                    color: 'rgba(241,236,227,.9)'
-                  }}
-                >
-                  {testimonial.quote}
-                </p>
-                <div style={{ borderTop: '1px solid rgba(241,236,227,.12)', paddingTop: '16px' }}>
-                  <div style={{ fontWeight: 700, marginBottom: '4px' }}>{testimonial.name}</div>
-                  <div style={{ fontSize: '13px', color: 'rgba(241,236,227,.6)' }}>
-                    {testimonial.role}
-                  </div>
                 </div>
               </div>
             ))}

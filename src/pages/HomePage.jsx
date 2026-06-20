@@ -3,13 +3,11 @@ import Hero from '../components/Hero';
 import TitleMarquee from '../components/TitleMarquee';
 import { films, services, getFilmStats } from '../data/filmsData';
 import { teamMembers } from '../data/teamData';
-import { getFeaturedTestimonials } from '../data/testimonialsData';
 
 const HomePage = () => {
   const navigate = useNavigate();
   const stats = getFilmStats();
   const featuredFilms = films.filter(f => f.featured).slice(0, 3);
-  const featuredTestimonials = getFeaturedTestimonials().slice(0, 3);
 
   return (
     <>
@@ -513,64 +511,6 @@ const HomePage = () => {
             >
               Meet The Full Team
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section style={{ padding: '100px 40px', background: '#100D0B', color: '#F1ECE3' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div data-reveal style={{ marginBottom: '50px', textAlign: 'center' }}>
-            <span
-              style={{
-                fontFamily: 'Oswald',
-                fontWeight: 600,
-                fontSize: '13px',
-                letterSpacing: '.3em',
-                textTransform: 'uppercase',
-                color: '#E01313'
-              }}
-            >
-              Testimonials
-            </span>
-            <h2
-              style={{
-                fontFamily: 'Anton',
-                fontSize: 'clamp(44px,6vw,72px)',
-                lineHeight: 0.9,
-                textTransform: 'uppercase',
-                marginTop: '12px'
-              }}
-            >
-              What People Say
-            </h2>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-            {featuredTestimonials.map((testimonial, idx) => (
-              <div
-                key={testimonial.id}
-                data-reveal
-                data-reveal-delay={idx * 100}
-                style={{
-                  background: 'rgba(241,236,227,.05)',
-                  padding: '32px',
-                  borderRadius: '4px',
-                  border: '1px solid rgba(241,236,227,.12)'
-                }}
-              >
-                <div style={{ fontSize: '36px', color: '#E01313', lineHeight: 1, marginBottom: '16px' }}>"</div>
-                <p style={{ fontSize: '15px', lineHeight: 1.7, marginBottom: '20px', color: 'rgba(241,236,227,.9)' }}>
-                  {testimonial.quote}
-                </p>
-                <div style={{ borderTop: '1px solid rgba(241,236,227,.12)', paddingTop: '16px' }}>
-                  <div style={{ fontWeight: 700, marginBottom: '4px' }}>{testimonial.name}</div>
-                  <div style={{ fontSize: '13px', color: 'rgba(241,236,227,.6)' }}>
-                    {testimonial.role}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
